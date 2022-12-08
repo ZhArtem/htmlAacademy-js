@@ -1,0 +1,61 @@
+.walden {
+  filter: contrast(0.9) brightness(1.2) hue-rotate(-20deg) saturate(1.7) sepia(0.4);
+}
+
+.toaster {
+  filter: contrast(0.67) saturate(2.5) hue-rotate(-30deg) sepia(0.4);
+}
+
+.kelvin {
+  filter: contrast(1.1) brightness(1.3) saturate(2.4) sepia(0.4);
+}
+
+.oldie {
+  filter: contrast(2) saturate(5) hue-rotate(-180deg);
+}
+
+.willow {
+  filter: saturate(0.02) contrast(0.85) brightness(1.2) sepia(0.02);
+}
+
+.photos {
+  position: relative;
+}
+
+.photo,
+.photo-original {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+}
+
+.photo {
+  z-index: 10;
+
+  background-image: url("img/spb-1.jpg");
+}
+
+.photo-original {
+  z-index: 20;
+
+  width: 50%;
+
+  background-image: url("img/spb-1.jpg");
+}
+
+.separator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 30;
+
+  width: 30px;
+  height: 30px;
+
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}

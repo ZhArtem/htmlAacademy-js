@@ -1,0 +1,228 @@
+h3 {
+    margin: 0.5em 0;
+  }
+  
+  p {
+    margin: 0.5em 0 2em;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 0;
+    position: relative;
+    width: 316px;
+    border: 1px solid #ededed;
+  }
+  
+  .card__img {
+    order: -1;
+  }
+  
+  .card__text {
+    position: relative;
+    margin-top: 0;
+    margin-left: 28px;
+    margin-bottom: 40px;
+    color: #444444;
+  }
+  
+  .card__text::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 260px;
+    left: 0;
+    bottom: -20px;
+    background-color: #ececec;
+  }
+  
+  .card__title {
+    margin-top: 18px;
+    margin-left: 28px;
+    margin-bottom: 5px;
+    font-family: "Verdana", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  
+  .card__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .card__button {
+    margin: 0 auto;
+    text-decoration: none;
+    display: block;
+    width: 260px;
+    padding: 0 10px;
+    padding-top: 16px;
+    padding-bottom: 19px;
+    border: 2px solid #444444;
+    color: #444444;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ffffff;
+  }
+  
+  .card__button:hover,
+  .card__button:focus {
+    background-color: #444444;
+    color: #ffffff;
+  }
+  
+  .card__button:active {
+    background-color: #444444;
+    color: #797979;
+  }
+  
+  .features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .feature {
+    position: relative;
+  }
+  
+  .feature::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: -5px;
+    background-repeat: no-repeat;
+  }
+  
+  .feature--eco::before {
+    width: 32px;
+    height: 37px;
+    background-image: url("mishka/icon-feature-flower.svg");
+  }
+  
+  .feature--handmade::before {
+    width: 34px;
+    height: 34px;
+    background-image: url("mishka/icon-feature-ball.svg");
+  }
+  
+  .feature--gift::before {
+    width: 33px;
+    height: 33px;
+    background-image: url("mishka/icon-feature-gift.svg");
+  }
+  
+  .feature--like::before {
+    width: 33px;
+    height: 28px;
+    background-image: url("mishka/icon-feature-heart.svg");
+  }
+  
+  .popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .popup--open {
+    display: block;
+  }
+  
+  .popup::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  .popup__content {
+    position: relative;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 70px 15px;
+    background-color: #ffffff;
+    box-shadow: -1px 5px 12px 0 rgba(89, 90, 90, 0.3);
+    z-index: 2;
+  }
+  
+  .popup__button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  
+    width: 20px;
+    height: 20px;
+  
+    font-size: 0;
+  
+    background: none;
+    border: 0;
+  }
+  
+  .popup__button::after,
+  .popup__button::before {
+    content: "";
+  
+    position: absolute;
+    right: 0;
+    top: 20px;
+  
+    width: 26px;
+    height: 6px;
+    margin: -13px -3px;
+  
+    color: #bfbfbf;
+    background-color: currentColor;
+  }
+  
+  .popup__button::before {
+    transform: rotate(45deg);
+  }
+  
+  .popup__button::after {
+    transform: rotate(-45deg);
+  }
+  
+  .popup__button:hover,
+  .popup__button:focus {
+    color: #9e9e9e;
+  }
+  
+  .popup__button:active {
+    color: #4a4a4a;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  

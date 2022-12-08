@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Чат</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="chat">
+      <h1 class="visually-hidden">Чат</h1>
+
+      <div class="chat-content">
+
+      </div>
+
+      <form class="chat-form" action="https://echo.htmlacademy.ru/courses" method="post">
+        <input class="chat-form-input" type="text" aria-label="Ваше сообщение" placeholder="Напишите что-нибудь" required>
+        <button class="chat-form-button" type="submit">Отправить</button>
+      </form>
+    </section>
+
+    <template id="message-template">
+      <div class="chat-message" tabindex="0">
+        <span class="chat-message-name">Неопознанный енот</span>
+        <p class="chat-message-text"></p>
+        <button class="chat-message-button" type="button">Удалить</button>
+      </div>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>

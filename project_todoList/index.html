@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Список дел</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="visually-hidden">Список дел</h1>
+    <ul class="todo-list">
+      <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span>Покормить кота</span>
+        </label>
+      </li>
+      <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span>Поужинать</span>
+        </label>
+      </li>
+      <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span>Полить цветы</span>
+        </label>
+      </li>
+    </ul>
+    <p class="empty-tasks hidden">Все задачи выполнены. Новых задач нет.</p>
+    <form class="add-form" action="" method="post">
+      <input class="add-form-input" type="text"  aria-label="Описание задачи" placeholder="Например, купить слона" required>
+      <button class="add-form-button" type="submit">Добавить задачу</button>
+    </form>
+
+    <template id="task-template">
+      <li class="todo-list-item">
+        <label>
+          <input type="checkbox" class="todo-list-input">
+          <span></span>
+        </label>
+      </li>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>

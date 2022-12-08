@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ru">
+    <meta charset="utf-8">
+    <title>Магазин «Мишка»</title>
+    <link href="mishka/setting.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="visually-hidden">Каталог товаров</h1>
+
+    <section class="card">
+      <h2 class="card__title">Зайчик-попрыгайчик</h2>
+      <img class="card__img" src="mishka/rabbit.jpg" width="" height="" alt="Зайчик-попрыгайчик">
+      <p class="card__text">Рост 30 см, вес 200 г</p>
+      <p><a class="card__button button-show" href="popup.html">Показать подробности</a></p>
+    </section>
+
+    <section class="popup">
+      <div class="popup__content">
+        <h2 class="visually-hidden">Подробности о товаре</h2>
+        <ul class="features">
+          <li class="feature feature--eco">
+            <p>Экологически чистые материалы</p>
+          </li>
+          <li class="feature feature--handmade">
+            <p>Связано вручную с любовью и умилением</p>
+          </li>
+          <li class="feature feature--gift">
+            <p>Поставляется в подарочной упаковке</p>
+          </li>
+          <li class="feature feature--like">
+            <p>Увеличивает лайки на фотографиях</p>
+          </li>
+        </ul>
+        <button class="popup__button button-hide" type="button">Закрыть</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
